@@ -10,7 +10,6 @@ public class MD5Util {
 
     	SimpleHash hash = new SimpleHash("md5", password,
     			salt, iterations);
-    	String encodedPassword = hash.toHex();
     	 System.out.println("result:"+hash.getSalt());
         return hash;
     }
