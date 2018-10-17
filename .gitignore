@@ -1,0 +1,76 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+server_log_home_IS_UNDEFINED
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+#*.gitignore
+
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor Files #
+################
+*~
+*.swp
+
+# Gradle Files #
+################
+.gradle
+
+# Build output directies
+/target
+*/target
+/log
+*/log
+/build
+*/build
+var
+logs
+
+# IntelliJ specific files/directories
+out
+.idea
+*.ipr
+*.iws
+*.iml
+atlassian-ide-plugin.xml
+
+# Eclipse specific files/directories
+.classpath
+.project
+.settings
+.metadata
+
+# NetBeans specific files/directories
+.nbattrs
+*.orig
+--------------------- 
+作者：不一样的程序员 
+来源：CSDN 
+原文：https://blog.csdn.net/xiongyouqiang/article/details/79362439?utm_source=copy 
+版权声明：本文为博主原创文章，转载请附上博文链接！
