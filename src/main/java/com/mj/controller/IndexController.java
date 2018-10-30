@@ -24,7 +24,17 @@ public class IndexController {
 	@RequiresPermissions("admin")
 	@RequestMapping("")
 	public String login(){
-	    return "index";
+	    return "/index/index";
+	}
+	
+	@RequestMapping("allused")
+	public String allused(){
+	    return "/index/allclue";
+	}
+	
+	@RequestMapping("usedclue")
+	public String usedclue(Model model){
+		return "/index/usedclue";
 	}
 	@RequestMapping("/gettablecontent")
 	public String getTableContent(@RequestParam int pageSize, @RequestParam int pageIndex,String querykey,Model model){
