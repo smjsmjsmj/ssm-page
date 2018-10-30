@@ -1,0 +1,367 @@
+<%=request.getContextPath()%>.form-box .column-3 .time .input-box .time-sel{
+	width: 41%;
+}
+.tab .btn-l1{
+	width: 15%;
+	float:left;
+	margin-top: 20px;
+}
+.tab .tab-list{
+	width: 80%;
+}
+.form-list.column-3 .btn-line{
+	margin-top: 5px;
+}
+.filter-result .table-info label{
+	font-size: 14px;
+}
+.filter-result .table-info a{
+	margin-top: 20px;
+}
+.paging-info2 .pages{
+	margin: 0 auto;
+	width: 265px;
+	
+}
+.filter-result .table-info .file-btn:hover{
+	text-decoration: underline;
+}
+.table-add{
+	width: 150px;
+	float: right;
+	margin: 20px;
+}
+.senior-pop{
+	height: 250px;
+}
+.senior-pop p{
+	line-height: 30px;
+}
+.senior-pop p span{
+	color:#2597bc;
+}
+.senior-pop input{
+	width: 80%;
+	height: 30px;
+}
+.senior-pop select{
+	width: 50%;
+}
+.senior-pop a{
+	width: 40%;
+	margin: 20px auto;
+}
+.senior-success-pop{
+	text-align: center;
+	font-size: 20px;
+	height: 220px;
+}
+.senior-success-pop h3{
+	text-align: left;
+}
+.senior-success-pop a{
+	float:left;
+	margin-top: 20px;
+}
+.senior-success-pop span{
+	color:#2597bc;
+}
+.senior-success-pop .fill-btn{
+	width: 20%;
+	margin-right: 2%;
+	margin-left: 10%;
+}
+.senior-success-pop .stroke-btn{
+	width: 45%;
+}
+
+.result-table .excel{
+	width: 50px;
+}
+.result-table .time{
+	width: 150px;
+}
+.result-table .fill-btn{
+	float:left;
+}
+.result-table .delete{
+	line-height: 36px;
+	color:red;
+	background: #f2f2f2;
+	display: block;
+	padding: 0 10px;
+	border-radius: 4px;
+} 
+.result-table .delete:hover{
+	background: #ccc;
+}
+.result-table td span{
+	color: #2298be;
+}
+.return-all{
+	width: 15%;
+	float:right;
+}
+.filter-result .btns{
+	padding-left: 325px;
+}
+.filter-result .btns li{
+	float:left;
+	margin-left: 10px;
+}
+.table-wrapper textarea{
+	height: 50px;
+	resize: none;
+}
+.flag,.phone{
+	cursor: pointer;
+}
+.blue{
+	display: block;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	margin: 30px auto;
+	color: #FFf;
+	background-color: #357ab3;
+}
+.result-table td a.more-btn{
+	width: 25%;
+	height: 20px;
+	line-height: 20px;
+	padding: 0 10px;
+	margin-left: 55%;
+}
+.result-table td .line{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 脙茠脝鈥櫭冣�犆⑩偓鈩⒚兤捗⑩偓聽脙垄芒鈥毬⑩�灺⒚兤捗嗏�櫭兟⒚⑩�毬吢∶兤捗⑩偓拧脙鈥毭偮ッ兤捗嗏�櫭冣�犆⑩偓鈩⒚兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏�櫭冣�毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮∶兤捗⑩偓拧脙鈥毭偮兤捗嗏�櫭冣�毭偮⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥γ偮久兤捗⑩偓拧脙鈥毭偮⒚兤捗嗏�櫭冣�犆⑩偓鈩⒚兤捗偮⒚兟⒚⑩偓拧脗卢脙鈥毭偮γ兤捗嗏�櫭冣�毭偮⒚兤捗偮⒚兟⒚⑩�毬吢∶冣�毭偮兤捗偮⒚兟⒚⑩�毬吢久冣�毭偮� Chrome */
+	-o-transform:rotate(45deg); 	/* Opera */
+	margin: 0 auto;
+	cursor: pointer;
+}
+.result-table textarea{
+	height: 45px;
+	overflow: hidden;
+	padding: 5px;
+}
+.result-table .top{
+	height: 20px;
+	background: #e4e4e4;
+}
+.result-table .top td{
+	padding: 5px;
+	text-align: left;
+}
+.filter-result .tipline{
+	width: 100%;
+	height: 30px;
+	background: #2298be;
+	color:#fff;
+	line-height: 30px;
+	text-indent: 10px;
+}
+.allocation-pop{
+	height: 250px;
+}
+.allocation-pop p{
+	font-size: 20px;
+}
+.allocation-pop p span{
+	color:#2597BC;
+}
+.allocation-pop select{
+	width: 100%;
+}
+.allocation-pop a{
+	width: 20%;
+	float:left;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+.allocation-pop .return-btn{
+	margin-left: 90px;
+}
+.return-pop p{
+	font-size: 20px;
+}
+.return-pop p span{
+	color:#2597bc;
+}
+.return-pop a{
+	width: 20%;
+	float:left;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+.return-pop .return-btn{
+	margin-left: 90px;
+}
+.top1{
+	background: #eeeeee;
+}
+.top1 td{
+	height: 10px;
+	padding: 0 !important;
+}
+.result-table tr{
+	box-sizing: border-box;
+}
+.result-table tr.on{
+	border:1px solid #999;
+}
+.result-table tr.on td{
+	border-top:1px solid #999;
+}
+.result-table tr td {
+    padding: 0px 0px;
+}
+.result-table {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+.result-table select{
+    background: transparent;
+    border:none;
+    outline: none;
+}
+.main-p p{
+	font-size: 16px;
+}
+.main-p {
+	margin-bottom: 10px;
+}
+.column-4 dd>span.tag-name {
+    width: 10%;
+}
+.column-4 dd {
+    width: 100%;
+    margin-right: 20.5%;
+}
+
+.form-list dd {
+    float: left;
+    margin: 10px 0;
+}
+
+.fill-btn1 {
+	color: #fff;
+	float: right;
+	width: 100px;
+	background: #948c81;
+	border: 1px solid #948c81;
+	top: 60px;
+	right: 200px;
+	position: absolute;
+}
+.fill-btn1:hover{
+	background-color: #999;
+}
+.fill-btn2{
+	width: 100px;
+	background-color: #e4e4e4;
+	float: right;
+	position: absolute;
+	top: 125px;
+	right: 400px;
+}
+.fill-btn2:hover{
+	background-color: #cacaca;
+}
+h1{
+	font-size: 30px;
+}
+.tag-name1{
+	margin-left: 37px;
+	color: #999;
+}
+.nbsp{
+	margin: 0px 71px;
+}
+.column-4 dd .input-box3 {
+	width: 35%;
+	margin-left: 75px;
+}
+.linked-item3{
+	width: 55px!important;
+	position: absolute;
+	top: 393px;
+	left: 1260px;
+}
+.main-right{
+	float: right;
+	margin-top: -380px;
+	margin-right: 160px;
+}
+.tab1 .tab-list1 li{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #dddddd;
+	float: left;
+	margin-right: 3px;
+}
+.tab1 .tab-list1 a{
+	display: block;
+	width: 100px;
+	height: 30px;
+}
+.tab1 .tab-list1 a:hover{
+	background-color: #c0bcb6
+}
+
+.form-box .cont1 select {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.cont1 td{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+.cont1 td select{
+    background: transparent;
+    border:none;
+    outline: none;
+}
+.main-con .form-box .cont6{
+	margin: 4px -207px;
+}
+.control-line .input-box1{
+	margin-left: 113px;
+}
+.column-3 .input-box select.linked-item1{
+	width: 567px;
+}
+.column-3 .input-box select.linked-item3{
+	width: 25%;
+}
+.fill-btn3{
+	width: 100px;
+	background-color: #e4e4e4;
+	float: right;
+	position: absolute;
+	top: 198px;
+	right: 400px;
+}
+.fill-btn3:hover {
+    background-color: #cacaca;
+}
+.fill-btn5{
+	background: orange;
+    border-color: orange;
+}
+.fill-btn5:hover{
+	background: #ff9326;   border-color: #ff9326;  
+}
+

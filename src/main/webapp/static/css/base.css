@@ -1,0 +1,1483 @@
+@charset "utf-8";
+
+/* CSS reset*/
+
+body,
+div,
+ul,
+ol,
+li,
+p,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+b,
+span,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-align: left;
+    font-family: Helvetica, Arial, "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    background: #eeeeee;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr,
+acronym {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+i,
+strong {
+    font-style: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/*a标签处理*/
+
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: all 0.18s ease-out;
+    -moz-transition: all 0.18s ease-out;
+    -ms-transition: all 0.18s ease-out;
+    -o-transition: all 0.18s ease-out;
+    transition: all 0.18s ease-out;
+}
+
+
+/*浮动*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*清除select的默认样式*/
+
+select {
+    height: 32px;
+    line-height: 32px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../images/select-arrow.png") no-repeat right center transparent;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/*-----------------页面框架start-----------------*/
+
+
+/*----页头start-----*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #1b1c21;
+    z-index: 90;
+}
+
+.header-con {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    color: #cecece;
+}
+
+.header-con h2 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.header-con h2 i {
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+
+/*----页头end-----*/
+
+
+/*-----横向导航start-----*/
+
+.nav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #2298be;
+    z-index: 90;
+}
+
+.nav-con {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav-con li {
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+
+.nav-con li a {
+    display: block;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav-con li a:hover,
+.nav-con li a.on {
+    background: #007499;
+}
+
+
+/*-----横向导航end-----*/
+
+
+/*-----页面主体内容start-----*/
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*侧部菜单start*/
+
+.menu {
+    float: left;
+    width: 160px;
+    min-height: 500px;
+    padding-top: 90px;
+    background: #21232b;
+}
+
+.menu-list {
+    width: 100%;
+    margin-top: 1px;
+}
+
+.menu-list li {
+    width: 160px;
+    margin-top: -1px;
+    text-align: center;
+    border-top: 1px solid #2c2b30;
+    border-bottom: 1px solid #2c2b30;
+}
+
+.menu-list li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #999;
+}
+
+.menu-list li a span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.menu-list li a span i {
+    font-size: 17px;
+}
+
+.menu-list li a.on {
+    color: #fff;
+    background: #565a6d;
+}
+
+.menu-list li a.on span {
+    color: #242424;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.menu-con .user-info {
+    height: 160px;
+    text-align: center;
+}
+
+.menu-con .user-info .user-img {
+    width: 85px;
+    height: 85px;
+    margin: 29px auto 15px;
+    background: url(../images/icon.png) no-repeat right top;
+    border-radius: 50%;
+}
+
+.menu-con .user-info .user-name {
+    padding: 0 10px;
+    color: #999;
+}
+
+
+/*侧部菜单end*/
+
+
+/*主体内容start*/
+
+.main {
+    float: left;
+    width: 1020px;
+    padding: 90px 0 0 20px;
+    background: #eee;
+}
+
+.main-wrapper {
+    width: 1020px;
+    margin-top: 20px;
+}
+
+
+/*面包屑*/
+
+.bread-crumbs {
+    height: 22px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    color: #999;
+}
+
+.bread-crumbs>span,
+.bread-crumbs>b,
+.bread-crumbs>i,
+.bread-crumbs>a {
+    float: left;
+}
+
+.bread-crumbs>a.clickable {
+    color: #999;
+}
+
+.bread-crumbs>a.clickable:hover {
+    color: #dd5826;
+}
+
+.bread-crumbs>b {
+    font-weight: normal;
+    color: #666;
+}
+
+.bread-crumbs i {
+    margin: 0 3px;
+}
+
+.bread-crumbs a.return-btn {
+    margin: 0 14px;
+}
+
+
+/*tab标签*/
+
+.tab {
+    padding: 0 20px;
+    background: #fff;
+}
+
+.tab-list {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-list li {
+    float: left;
+    text-align: center;
+}
+
+.tab-list li a {
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #666;
+    transition: none;
+}
+
+.tab-list li a:hover,
+.tab-list li a.on {
+    color: #2298be;
+    border-bottom: 2px solid #2298be;
+}
+
+/*块标题*/
+.title-info {
+    height: 36px;
+    padding-left: 5px;
+    line-height: 36px;
+    color: #fff;
+    background: #000;
+    font-size: 14px;
+}
+
+/*主体内容end*/
+
+
+/*-----------------页面框架end-----------------*/
+
+
+/*-----按钮 start-----*/
+
+
+/*按钮级别*/
+
+.btn-l1 {
+    display: block;
+    min-width: 60px;
+    padding: 0 15px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.btn-l2 {
+    display: block;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.btn-l3 {
+    display: block;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+
+/*填充类按钮*/
+
+.fill-btn {
+    color: #fff;
+    background: #2298be;
+    border: 1px solid #2298be;
+}
+
+.fill-btn:hover {
+    background: #3ca7dc;
+    border-color: #3ca7dc;
+}
+
+
+/*线框类按钮*/
+
+.stroke-btn {
+    color: #666;
+    border: 1px solid #cfcfcf;
+    background: #f7f7f7;
+}
+
+.stroke-btn:hover {
+    background: #ccc;
+    border-color: #ccc;
+}
+
+
+/*文字链按钮*/
+
+.plain-btn {
+    color: #7ca9dd;
+}
+
+.plain-btn:hover {
+    text-decoration: underline;
+}
+
+/*线框置灰按钮*/
+
+.gray-btn {
+    color: #ccc !important;
+    background: #f7f7f7 !important;
+    border: 1px solid #ddd !important;
+    cursor: default;
+}
+
+
+/*文字置灰按钮*/
+
+.gray-btn1 {
+    color: #ccc !important;
+    cursor: default;
+}
+.gray-btn1:hover {
+    color: #ccc !important;
+    background: none !important;
+    text-decoration: none !important;
+}
+
+
+
+
+/*-----按钮 end-----*/
+
+
+/*-----表单样式 start-----*/
+
+.form-box {
+    margin-bottom: 20px;
+    padding: 20px 20px 30px;
+    background: #fff;
+}
+
+.form-list {
+    width: 100%;
+}
+.form-list dt {
+    float: left;
+    width: 100%;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+}
+.form-list dd {
+    float: left;
+    margin: 10px 0;
+}
+
+.form-list dd>span.tag-name,
+.form-list dd div.input-box,
+.form-list dd div.input-box>input,
+.form-list dd div.input-box>select,
+.form-list dd div.input-box>textarea,
+.form-list dd div.input-box>label,
+.form-list dd div.input-box>span.gap,
+.form-list dd>a,
+.form-list dd>b.note {
+    float: left;
+}
+
+.form-list dd span.tag-name {
+    padding-right: 14px;
+    text-align: right;
+    color: #999;
+}
+
+.form-list .input-box>input,
+.form-list .input-box>select,
+.form-list .simulate-box {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 8px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+}
+
+.form-list .input-box>select {
+    height: 32px;
+    line-height: 32px;
+}
+
+.form-list .input-box>textarea {
+    width: 96%;
+    height: 90px;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #333;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    outline: none;
+    resize: none;
+}
+
+.form-list .input-box>input:focus,
+.form-list .input-box>select:focus,
+.form-list .input-box>textarea:focus {
+    border-color: #7ca9dd;
+}
+
+.form-list dd span.tag-name,
+.form-list dd b.note,
+.form-list .input-box label,
+.form-list .input-box span.gap {
+    height: 32px;
+    line-height: 32px;
+}
+
+.form-list .input-box label {
+    margin-right: 15px;
+}
+
+.form-list .input-box label input {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.form-list .input-box span.gap {
+    margin: 0 5px;
+}
+
+.form-list .linked-box {
+    margin-left: 1px;
+}
+
+.form-list .linked-box .linked-item {
+    margin-left: -1px;
+}
+
+.form-list dd>a {
+    margin-right: 10px;
+}
+
+.form-list dd b.note {
+    margin-left: 5px;
+    color: #666;
+    font-weight: normal;
+}
+
+.form-list .textarea-line b.note {
+    height: auto;
+    line-height: initial;
+    margin-top: 93px;
+}
+
+.form-list .btn-line {
+    margin-top: 20px;
+}
+
+.form-list .checkbox-line,
+.form-list .radio-line {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*模拟下拉框*/
+
+.simulate-box {
+    position: relative;
+}
+
+.simulate-box .simulate-select {
+    text-indent: 10px;
+    color: #333;
+    background: url("../images/select-arrow.png") no-repeat right center transparent;
+}
+
+.simulate-option {
+    position: absolute;
+    top: 31px;
+    left: -1px;
+    width: 96%;
+    padding:0 2% 5px;
+    border: 1px solid #e6e8e9;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+}
+
+.simulate-option ul {
+    max-height: 134px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.simulate-option li {
+    display: block;
+    line-height: 22px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.simulate-option input {
+    width: 95%;
+    margin: 10px auto;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #e6e8e9;
+    text-indent: 12px;
+    font-size: 12px;
+    color: #333;
+    border-radius: 2px;
+    outline: none;
+}
+.simulate-option input:focus {
+    border-color: #7ca9dd;
+}
+/*带操作栏的textarea*/
+
+.form-list .textarea-wrap {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.form-list .textarea-wrap textarea {
+    height: 70px;
+    border: none;
+}
+
+.form-list .textarea-wrap .bottom-operate {
+    float: left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.form-list .textarea-wrap .bottom-operate a {
+    display: inline;
+    margin-right: 10px;
+}
+
+.form-list .textarea-line2 b.note {
+    margin-top: 106px;
+}
+
+
+/*日历小图标*/
+
+.form-list .input-box .time-sel {
+    background: url(../images/calendar.png) no-repeat right center;
+}
+
+
+/*上传文件按钮*/
+
+.form-list .upload-file {
+    width: auto !important;
+}
+
+.form-list .upload-file .file-btn {
+    float: left;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 24px;
+    padding: 0 10px;
+    line-height: 24px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.form-list .upload-file .file-btn input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer !important;
+}
+
+.form-list .upload-file .file-path {
+    float: left;
+    margin-left: 10px;
+    line-height: 26px;
+    color: #70bb33;
+}
+
+.form-list .file-line b.note {
+    line-height: 26px;
+}
+
+
+/*带字体图标的输入框*/
+
+.form-list .iconfont-box input {
+    width: 90%;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form-list .iconfont-box .iconfont-wrap {
+    float: left;
+    width: 9.38%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-list .iconfont-box>input:focus+.iconfont-wrap {
+    border-color: #7ca9dd;
+    border-left-color: #ccc;
+}
+
+
+/*带添加、删除按钮的输入框*/
+
+.form-list .control-line .control-wrap {
+    float: left;
+    width: 86%;
+    margin-bottom: -20px;
+    overflow: hidden;
+}
+
+.form-list .control-line .input-box {
+    width: 58%;
+    margin-bottom: 20px;
+}
+
+.form-list .control-line .control-sign {
+    float: left;
+    width: 30px;
+    margin-left: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #555;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/*字体图标背景的输入框*/
+
+.iconbg-box {
+    position: relative;
+}
+
+.iconbg-box .icon-bg {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    color: #999;
+}
+
+.iconbg-box .icon-bg i {
+    vertical-align: middle;
+}
+
+
+/*一栏样式*/
+
+.column-1 dd {
+    width: 100%;
+}
+
+.column-1 dd>span.tag-name {
+    width: 10%;
+}
+
+.column-1 dd div.input-box {
+    width: 50%;
+}
+
+.column-1 .input-box .time-sel {
+    width: 46.1%;
+}
+
+.column-1 .input-box select.linked-item {
+    width: 50.2%;
+}
+.column-1 .input-box input.linked-item {
+    width: 49.7%;
+}
+
+
+/*二栏样式*/
+
+.column-2 dd {
+    width: 48%;
+    margin-right: 4%
+}
+
+.column-2 dd>span.tag-name {
+    width: 16%;
+}
+
+.column-2 dd div.input-box {
+    width: 80%;
+}
+
+.column-2 .input-box .time-sel {
+    width: 46.5%;
+}
+.column-2 .input-box input.linked-item{
+    width: 49.7%;
+}
+.column-2 .input-box select.linked-item{
+    width: 50%;
+}
+.column-2 .input-box select.linked-item2 {
+    width: 33.5%;
+}
+
+
+
+
+/*三栏样式*/
+
+.column-3 dd {
+    width: 31%;
+    margin-right: 3.5%
+}
+
+.column-3 dd>span.tag-name {
+    width: 25%;
+}
+
+.column-3 dd .input-box {
+    width: 70%;
+}
+.column-3 .input-box input.linked-item {
+    width: 49.5%;
+}
+.column-3 .input-box select.linked-item {
+    width: 50%;
+}
+
+
+/*四栏样式*/
+
+.column-4 dd {
+    width: 23.5%;
+    margin-right: 2%
+}
+
+.column-4 dd>span.tag-name {
+    width: 33%;
+}
+
+.column-4 dd .input-box {
+    width: 60%;
+}
+
+.column-4 dd.btn-line {
+    width: 40%;
+}
+
+.column-4 dd.btn-line>span.tag-name {
+    width: 19.5%;
+}
+
+
+/*-----表单样式 end-----*/
+
+
+/*-----表格类筛选结果样式 start-----*/
+
+
+/*筛选信息说明栏*/
+
+.table-info {
+    height: 32px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background: #fef7e7
+}
+
+.table-info p {
+    float: left;
+    line-height: 32px;
+    color: #666;
+}
+
+.table-info p i {
+    font-size: 18px;
+    margin-right: 15px;
+    vertical-align: bottom;
+    *vertical-align: middle;
+}
+
+.table-info a {
+    float: right;
+}
+
+.color-dd5826 {
+    color: #2298be !important;
+}
+
+
+/*筛选结果表格*/
+
+.table-wrapper {
+    background: #fff;
+}
+
+.result-table {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.result-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.result-table tr th,
+.result-table tr td {
+    text-align: center;
+}
+
+.result-table tr th {
+    height: 40px;
+    padding: 0 5px;
+    color: #999;
+    background: #f5f5f5;
+}
+
+.result-table tr td {
+    padding: 15px 5px;
+}
+
+
+/*分页信息*/
+
+.paging-info {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+
+/*翻页器1*/
+
+.paging-info1 .pages>span,
+.paging-info1 .pages>a {
+    float: left;
+    color: #999;
+    margin: 0 6px;
+}
+
+.paging-info1 .pages>a {
+    float: left;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "黑体"
+}
+
+.paging-info1 .all-page a {
+    float: left;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #999;
+    text-align: center;
+    margin: 0 4px;
+}
+
+.paging-info1 .all-page a.on,
+.paging-info1 a:hover {
+    color: #fff;
+    background: #b7b7b7;
+    border-radius: 3px;
+}
+
+
+/*翻页器2*/
+
+.paging-info2 .all-page,
+.paging-info2 .all-page a {
+    float: left;
+    color: #999;
+    margin: 0 10px;
+}
+
+.paging-info2 .all-page {
+    margin: 0 10px;
+}
+
+.paging-info2 .pages>a {
+    float: left;
+    color: #999;
+}
+
+.paging-info2 .all-page a.on,
+.paging-info2 a:hover {
+    color: #dd5826;
+    text-decoration: underline;
+}
+
+
+/*-----表格类筛选结果样式 end-----*/
+
+
+/*----------页面弹层start----------*/
+.mask {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 3000px;
+    height: 10000px;
+    margin: 0 0 0 -1500px;
+    background: url(../images/mask.png);
+    z-index: 99;
+    display: none;
+}
+.pop-close {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 28px;
+    color: #fff;
+    font-family: "simsun", "宋体";
+    cursor: pointer;
+}
+.pop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    font-family: "Micsoft Yahei", "微软雅黑";
+    display: none;
+    z-index: 100;
+}
+.pop-con h3 {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #2597bc;
+}
+.pop-info {
+    padding: 20px 25px;
+}
+
+/*详情弹层*/
+.detail-pop {
+    width: 480px;
+    height: 200px;
+    margin-left: -240px;
+    margin-top: -100px;
+}
+
+/*提示弹层*/
+.tips-panel {
+    position: fixed;
+    z-index: 102;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 50px;
+    margin: -35px 0 0 -135px;
+    padding: 10px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+}
+
+/*----------页面弹层end----------*/
+
+
+/*----------字体图标 start---------*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../iconfont/iconfont.eot?t=1501475670524');
+    /* IE9*/
+    src: url('../iconfont/iconfont.eot?t=1501475670524#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff?t=1501475670524') format('woff'), /* chrome, firefox */
+    url('../iconfont/iconfont.ttf?t=1501475670524') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg?t=1501475670524#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yinsi:before {
+    content: "\e615";
+}
+
+.icon-yewufenxi:before {
+    content: "\e60b";
+}
+
+.icon-jianhao:before {
+    content: "\e618";
+}
+
+.icon-icon-copy-copy-copy:before {
+    content: "\e64c";
+}
+
+.icon-tianjia:before {
+    content: "\e733";
+}
+
+.icon-shuju:before {
+    content: "\e664";
+}
+
+.icon-zhanghao:before {
+    content: "\e725";
+}
+
+.icon-zl_yingyongfill:before {
+    content: "\e67b";
+}
+
+.icon-gongju:before {
+    content: "\e62d";
+}
+
+.icon-peizhi:before {
+    content: "\e619";
+}
+
+.icon-liebiaoshitu:before {
+    content: "\e627";
+}
+
+
+/*----------字体图标 end---------*/
+
+
+/*---------------命名说明start（页面做完删除即可）---------------*/
+
+
+/*页头*/
+
+.header {}
+
+.header-con {}
+
+
+/*页面主体容器*/
+
+.container {}
+
+
+/*横向导航*/
+
+.nav {}
+
+
+/*子导航*/
+
+.subnav {}
+
+
+/*顶导航*/
+
+.topnav {}
+
+
+/*边导航*/
+
+.sidebar {}
+
+
+/*侧部菜单*/
+
+.menu {}
+
+
+/*子菜单*/
+
+.submenu {}
+
+
+/*三级菜单*/
+
+.level3-menu {}
+
+
+/*页面主体内容*/
+
+.main {}
+
+.main-wrapper {}
+
+
+/*面包屑*/
+
+.bread-crumb {}
+
+
+/*tab标签*/
+
+.tab {}
+
+
+/*标题：修饰词+tit*/
+
+.main-tit {}
+
+
+/*左中右上下内容区*/
+
+.left-con {}
+
+.center-con {}
+
+.right-con {}
+
+.top-con {}
+
+.bottom-con {}
+
+
+/*表格类筛选结果*/
+
+.filter-result {}
+
+
+/*筛选信息说明栏*/
+
+.filter-info {}
+
+
+/*分页信息栏*/
+
+.paging-info {}
+
+
+/*筛选结果表格*/
+
+.table-wrapper {}
+
+.result-table {}
+
+
+/*宽高类*/
+
+.w978 {
+    width: 978px;
+}
+
+.h100 {
+    height: 100px;
+}
+
+
+/*颜色:使用颜色的名称或者color+16进制代码*/
+
+.red {
+    color: red;
+}
+
+.color-dd5826 {
+    color: #dd5826;
+}
+
+
+/*字体大小：直接使用'font+字体大小'作为类名*/
+
+.font14 {
+    font-size: 14px;
+}
+
+
+/*按钮类:共用样式直接添加类名，需单独定义的样式可以添加"功能+btn"的类名，然后将特殊样式写进里面 */
+
+.btn-l1 {}
+
+.btn-l2 {}
+
+.btn-l3 {}
+
+.fill-btn {}
+
+.stroke-btn {}
+
+.plain-btn {}
+
+.gray-btn {}
+
+.cancel-btn {}
+
+
+/*小图标：图标名称+icon*/
+
+.eye-icon {}
+
+
+/*提示信息*/
+
+.msg {}
+
+
+/*小技巧*/
+
+.tips {}
+
+
+/*备注、说明、注意事项*/
+
+.notes {}
+
+
+/*页尾*/
+
+.footer {}
+
+
+/* notes:
+    1.类名一律小写;
+    2.尽量用英文;
+    3.长名称或词组可以使用中横线来为选择器命名；
+	  (一是输入时少按一个shift键,二是为了良好区分JavaScript变量命名，js变量命名常用“_”，而驼峰结构多用于js的函数命名)
+    4.除去页面结构类，其他类名尽量依据功能来命名，既规范又方便分辨内容；
+    5.不要盲目缩写，除非一看就明白的单词。
+*/
+
+
+/* CSS书写规范建议:
+  1.CSS书写顺序：
+　    1)位置属性(position, top, right, z-index,display, float等)　　
+ 	  2)大小(width, height, padding, margin)　　
+	  3)文字系列(font, line-height, letter-spacing,color-,text-align等)　　
+	  4)背景(background, border等)　　
+	  5)其他(animation, transition, cursor等)
+  2.CSS缩写属性:
+　　CSS有些属性是可以缩写的，比如padding,margin,font等等，这样精简代码同时又能提高用户的阅读体验；
+  3.去掉小数点前的“0”；
+  4.16进制颜色代码缩写：
+  　有些颜色代码是可以缩写的，我们就尽量缩写吧，可以提高用户体验。
+*/
+
+
+/*---------------命名说明end---------------*/
